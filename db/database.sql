@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS taskdb;
+
+USE taskdb;
+
+CREATE TABLE tasks (
+  id INT(11) NOT NULL AUTO_INCREMENT,
+  name VARCHAR(45) DEFAULT NULL,
+  content TEXT,
+  PRIMARY KEY (id)
+);
+
+DESCRIBE tasks; 
+
